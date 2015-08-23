@@ -3,12 +3,14 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using System.Collections;
 
+
+	
 namespace UnityStandardAssets._2D
 {
 	public class JumpNRunCharacterCustom2D : MonoBehaviour {
 		int i;
 		RaycastHit2D[] hitInfoArray;
-		
+
 		Vector2 KlickTargetPoint;
 		Vector2 DirectionToKlickTargetPoint;
 		bool walkingToKlickTarget = false;
@@ -23,20 +25,17 @@ namespace UnityStandardAssets._2D
 
 		private Animator m_Anim;
 		private Rigidbody2D m_Rigidbody2D;
-		private CircleCollider2D m_CircleCollider2D;
 
         private void Awake(){
             m_Anim = GetComponent<Animator>();
-			m_CircleCollider2D = GetComponent<CircleCollider2D>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
 		private void Update(){
 
-			Vector2 CharacterPosition = m_Rigidbody2D.position+m_CircleCollider2D.offset;
 
 			AnalogInputX = CrossPlatformInputManager.GetAxis("Horizontal");
-			JumpInput = CrossPlatformInputManager.GetButton("Jump");
+			JumpInput = CrossPlatformInputManager.GetButton("Jump") || CrossPlatformInputManager.GetAxis("Vertical")>0;
 
 			//jumping
 			if(!oldJumpInput && JumpInput){

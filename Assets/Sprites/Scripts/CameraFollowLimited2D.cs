@@ -7,13 +7,17 @@ public class CameraFollowLimited2D : MonoBehaviour {
 
 	[SerializeField] private Rigidbody2D Target = new Rigidbody2D();
 	
-	[SerializeField] private float m_MaxX = 1; 
-	[SerializeField] private float m_MinX = -1; 
-	[SerializeField] private float m_MaxY = 0; 
-	[SerializeField] private float m_MinY = 0; 
+	[SerializeField] private float m_MaxX = 9999f; 
+	[SerializeField] private float m_MinX = -9999f; 
+	[SerializeField] private float m_MaxY = 9999f; 
+	[SerializeField] private float m_MinY = -9999f; 
 	
-	[SerializeField] private float m_speed = 3; 
-	
+	[SerializeField] private float m_OffsetY = -3f; 
+
+	[SerializeField] private float m_speed = 11.475f; 
+
+	Vector2 follow_position;
+
 	// Use this for initialization
 	void Start () {
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -21,13 +25,13 @@ public class CameraFollowLimited2D : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update(){
-
+		follow_position = Target.position + new Vector2 (0,m_OffsetY);
 		float limitedX = Target.position.x;
 		float limitedY = Target.position.y;
-		if(Target.position.x > m_MaxX) limitedX = m_MaxX;
-		if(Target.position.x < m_MinX) limitedX = m_MinX;
-		if(Target.position.y > m_MaxY) limitedY = m_MaxY;
-		if(Target.position.y < m_MinY) limitedY = m_MinY;
+		if(follow_position.x > m_MaxX) limitedX = m_MaxX;
+		if(follow_position.x < m_MinX) limitedX = m_MinX;
+		if(follow_position.y > m_MaxY) limitedY = m_MaxY;
+		if(follow_position.y < m_MinY) limitedY = m_MinY;
 		
 		Vector2 start = m_Rigidbody2D.transform.position;
 		Vector2 end = new Vector2(limitedX,limitedY);
