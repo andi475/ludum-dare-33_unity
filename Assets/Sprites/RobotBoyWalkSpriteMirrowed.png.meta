@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 6c45b42370103524582d47a0dc2b5a54
+timeCreated: 1432668956
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RobotBoyWalkSpriteMirrowed_0
+    21300002: RobotBoyWalkSpriteMirrowed_1
+    21300004: RobotBoyWalkSpriteMirrowed_2
+    21300006: RobotBoyWalkSpriteMirrowed_3
+    21300008: RobotBoyWalkSpriteMirrowed_4
+    21300010: RobotBoyWalkSpriteMirrowed_5
+    21300012: RobotBoyWalkSpriteMirrowed_6
+    21300014: RobotBoyWalkSpriteMirrowed_7
+    21300016: RobotBoyWalkSpriteMirrowed_8
+    21300018: RobotBoyWalkSpriteMirrowed_9
+    21300020: RobotBoyWalkSpriteMirrowed_10
+    21300022: RobotBoyWalkSpriteMirrowed_11
+    21300024: RobotBoyWalkSpriteMirrowed_12
+    21300026: RobotBoyWalkSpriteMirrowed_13
+    21300028: RobotBoyWalkSpriteMirrowed_14
+    21300030: RobotBoyWalkSpriteMirrowed_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: RobotBoyWalkSpriteMirrowed_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1783
+        width: 101
+        height: 223
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_1
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1784
+        width: 99
+        height: 222
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_2
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1787
+        width: 96
+        height: 219
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_3
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1786
+        width: 91
+        height: 222
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_4
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1781
+        width: 89
+        height: 228
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_5
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1776
+        width: 89
+        height: 230
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_6
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 1784
+        width: 91
+        height: 222
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1512
+        width: 94
+        height: 221
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_8
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1514
+        width: 96
+        height: 220
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_9
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1511
+        width: 89
+        height: 223
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_10
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1510
+        width: 88
+        height: 222
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_11
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1511
+        width: 89
+        height: 222
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_12
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1504
+        width: 90
+        height: 228
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_13
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 1500
+        width: 97
+        height: 229
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_14
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1229
+        width: 102
+        height: 231
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RobotBoyWalkSpriteMirrowed_15
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1235
+        width: 103
+        height: 225
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
