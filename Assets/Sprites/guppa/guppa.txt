@@ -1,0 +1,7 @@
+guppa_walking:
+	Höhe: 24px
+	Breite: 22px
+	
+	Frames: 100ms
+	Anzahl: 4
+	Art: Loop

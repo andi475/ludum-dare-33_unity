@@ -1,0 +1,51 @@
+jauzer_idle:
+	Breite 28px
+	Höhe: 30px
+	
+	Frames: 300ms
+	Frames 13 und 15: 800ms
+	Frame 14: 600ms
+	Anzahl: 18
+	Art: Loop
+
+jauzer_walking:
+	Breite: 28px
+	Höhe: 30px
+	
+	Frames: 75ms
+	Anzahl: 12
+	Art: Loop
+	
+jauzer_jumping:
+	Breite: 28px
+	Höhe: 31px
+	
+	Frames: 50ms
+	Anzahl: 8
+	Art: KEIN Loop <----------
+	
+jauzer_landing:
+	Breite: 28px
+	Höhe: 31px
+	
+	Frames: 50ms
+	Anzahl: 8
+	Art: KEIN Loop <----------
+	
+jauzer_ducking:
+	Breite: 28px
+	Höhe: 31px
+	
+	Frames: 100ms
+	Anzahl: 3
+	Art: KEIN Loop <----------
+	
+jauzer_duck_releasing:
+	Breite: 28px
+	Höhe: 31px
+	
+	Frames: 100ms
+	Anzahl: 3
+	Art: KEIN Loop <----------
+	
+NOTES: jauzer_ducking can also be used as interaction animation.

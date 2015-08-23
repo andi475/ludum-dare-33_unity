@@ -1,0 +1,8 @@
+Pilze: 
+ Breite: 15 px
+ Hoehe: 20px
+
+ Erstes frame 2400ms
+ Frames: 100ms
+ Anzahl: 7
+ Art: Loop

@@ -1,0 +1,32 @@
+MünzeIdle:
+ Breite: 15px
+ Höhe: 14px
+ 
+ Frame: 100ms
+ Anzahl: 6
+ Art: Loop
+ 
+MünzeIdle:
+ Breite: 15px
+ Höhe: 14px
+ 
+ Frame: 20ms
+ Anzahl: 19
+ Art: Kein Loop
+ 
+Münze_Insert:
+ Breite: 15px
+ Höhe: 14px
+ 
+ Frame: 100ms
+ Anzahl: 8
+ Art: Kein Loop
+ 
+Münze_extract:
+ Breite: 15px
+ Höhe: 14px
+ 
+ Frame: 100ms
+ Anzahl: 8
+ Art: Kein Loop
+ 

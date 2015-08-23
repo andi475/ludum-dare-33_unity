@@ -1,0 +1,15 @@
+flytrap_idle:
+	Höhe: 30px
+	Breite: 30px
+	
+	Frames: 250ms
+	Anzahl: 2
+	Art: Loop
+
+flytrap_in_out:
+	Höhe: 30px
+	Breite: 30px
+	
+	Frames: 100ms
+	Anzahl: 7
+	Art: Kein Loop

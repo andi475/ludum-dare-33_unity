@@ -1,0 +1,25 @@
+itemblock_empty:
+	Höhe: 16px
+	Breite: 16px
+	
+itemblock_full:
+	Höhe: 16px
+	Breite: 16px
+	
+	Frames: 50ms
+	Frame 1: 300ms
+	Anzahl: 20
+	Art: Loop
+
+itemblock_statechange:
+	Höhe: 18px
+	Breite: 18px
+	
+	Frames: 100ms
+	Anzahl: 6
+	Art: Kein Loop
+	
+Notes:
+	itemblock_statechange:
+	 oben:	von empty zu full
+	 unten:	von full zu empty
