@@ -9,11 +9,7 @@ namespace UnityStandardAssets._2D
 {
 	public class JumpNRunCharacterCustom2D : MonoBehaviour {
 		int i;
-		RaycastHit2D[] hitInfoArray;
 
-		Vector2 KlickTargetPoint;
-		Vector2 DirectionToKlickTargetPoint;
-		bool walkingToKlickTarget = false;
 		
 		float AnalogInputX = 0f;
 		bool JumpInput = false;
@@ -22,14 +18,23 @@ namespace UnityStandardAssets._2D
 		public float m_MaxSpeed = 10f;
 		public float m_JumpForce = 400f;
 		public float m_MovementForce = 30f;
+		
+		public GameObject water_prefab;
 
 		private Animator m_Anim;
 		private Rigidbody2D m_Rigidbody2D;
-
         private void Awake(){
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
+
+		public float fireRate = 0.009f;
+		private float nextWater = 0.0f;
+
+
+
+
+
 
 		private void Update(){
 
@@ -58,6 +63,14 @@ namespace UnityStandardAssets._2D
 			else{
 				m_Anim.Play("RobotIdle");
 			}
+
+
+			//Planzen Gießen
+			if (CrossPlatformInputManager.GetButton ("Action") && Time.time > nextWater) {
+				nextWater = Time.time + fireRate;
+				Instantiate(water_prefab, m_Rigidbody2D.position + new Vector2(-0.2f, 0.1f), Quaternion.identity);
+			}
+
 		}
 
     }

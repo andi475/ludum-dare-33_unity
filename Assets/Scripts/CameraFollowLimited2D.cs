@@ -25,9 +25,9 @@ public class CameraFollowLimited2D : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update(){
-		follow_position = Target.position + new Vector2 (0,m_OffsetY);
-		float limitedX = Target.position.x;
-		float limitedY = Target.position.y;
+		follow_position = new Vector2 (Target.position.x,Target.position.y+m_OffsetY);
+		float limitedX = follow_position.x;
+		float limitedY = follow_position.y;
 		if(follow_position.x > m_MaxX) limitedX = m_MaxX;
 		if(follow_position.x < m_MinX) limitedX = m_MinX;
 		if(follow_position.y > m_MaxY) limitedY = m_MaxY;
