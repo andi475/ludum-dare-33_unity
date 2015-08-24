@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 33a0046edc35b4a45b4481b8c8d92014
-timeCreated: 1440343081
+timeCreated: 1440427658
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,62 +58,62 @@ TextureImporter:
     - name: jauzer_ducking_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 31
-        width: 28
-        height: 31
+        width: 17
+        height: 29
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: jauzer_ducking_1
       rect:
         serializedVersion: 2
-        x: 28
+        x: 33
         y: 31
-        width: 28
-        height: 31
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 17
+        height: 27
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: jauzer_ducking_2
       rect:
         serializedVersion: 2
-        x: 56
+        x: 61
         y: 31
-        width: 28
-        height: 31
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 17
+        height: 25
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: jauzer_ducking_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 28
-        height: 31
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 17
+        height: 29
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: jauzer_ducking_4
       rect:
         serializedVersion: 2
-        x: 28
+        x: 34
         y: 0
-        width: 28
-        height: 31
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 17
+        height: 27
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: jauzer_ducking_5
       rect:
         serializedVersion: 2
-        x: 56
+        x: 62
         y: 0
-        width: 28
-        height: 31
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 17
+        height: 25
+      alignment: 7
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

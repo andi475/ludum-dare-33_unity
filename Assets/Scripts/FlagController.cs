@@ -31,6 +31,7 @@ namespace UnityStandardAssets._2D
 		{
 			if (other.tag == "Player"){
 				go=true;
+				other.BroadcastMessage("work", 2f);
 			}
 		}
 
