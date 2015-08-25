@@ -10,7 +10,9 @@ namespace UnityStandardAssets._2D
 			if (other.tag == "Player")
 			{
 				other.BroadcastMessage("GearUp", "watering_can");
+
 			}
 		}
+
 	}
 }

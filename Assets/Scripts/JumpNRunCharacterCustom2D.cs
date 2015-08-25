@@ -10,6 +10,8 @@ namespace UnityStandardAssets._2D
 	public class JumpNRunCharacterCustom2D : MonoBehaviour {
 		int i;
 
+		string gui_massage = "";
+
 		float work_end_time = 0f;
 		
 		float AnalogInputX = 0f;
@@ -30,9 +32,11 @@ namespace UnityStandardAssets._2D
 
 		private Animator m_Anim;
 		private Rigidbody2D m_Rigidbody2D;
+		private Collider2D m_Collider2D;
         private void Awake(){
-            m_Anim = GetComponent<Animator>();
-            m_Rigidbody2D = GetComponent<Rigidbody2D>();
+			m_Anim = GetComponent<Animator>();
+			m_Rigidbody2D = GetComponent<Rigidbody2D>();
+			m_Collider2D = GetComponent<Collider2D>();
 			watering_can = this.gameObject.transform.Find("watering_can").gameObject;
         }
 
@@ -58,7 +62,7 @@ namespace UnityStandardAssets._2D
 			if (Time.time > work_end_time) {
 
 				//jumping
-				if (!oldJumpInput && JumpInput) {
+				if (!oldJumpInput && JumpInput && m_Collider2D.IsTouchingLayers()) {
 					m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
 				}
 				oldJumpInput = JumpInput;
@@ -95,12 +99,20 @@ namespace UnityStandardAssets._2D
 				}
 				if (CrossPlatformInputManager.GetButton ("Action") && Time.time > nextWater) {
 					nextWater = Time.time + fireRate;
-					Instantiate (water_prefab, m_Rigidbody2D.position + new Vector2 (water_offset, 0.1f), Quaternion.identity);
+					Instantiate (water_prefab, m_Rigidbody2D.position + new Vector2 (water_offset, 0.2f), Quaternion.identity);
 				}
 			} else {
 				watering_can.transform.localScale = new Vector2 (0, 0);
 			}
 		}
-
+		
+		void OnGUI() {
+			if(gui_massage.Length>0){
+				GUI.color = Color.white;
+				GUI.Box(new Rect(10, 10, 100, 20), gui_massage);
+			}
+		}
     }
+
+
 }

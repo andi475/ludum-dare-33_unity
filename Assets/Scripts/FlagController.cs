@@ -9,6 +9,8 @@ namespace UnityStandardAssets._2D
 {
 	public class FlagController : MonoBehaviour {
 		int i;
+		
+		private bool triggered = false;
 
 		public float m_Speed = 0.4f;
 		public float m_Distance = 1f;
@@ -29,9 +31,10 @@ namespace UnityStandardAssets._2D
 
 		private void OnTriggerEnter2D(Collider2D other)
 		{
-			if (other.tag == "Player"){
+			if (other.tag == "Player" && !triggered){
 				go=true;
 				other.BroadcastMessage("work", 2f);
+				triggered=true;
 			}
 		}
 

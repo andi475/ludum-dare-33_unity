@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - water
+  - fire_nozzle
+  - dry
   layers:
   - Default
   - TransparentFX
